@@ -36,11 +36,12 @@ library("ggplot2")
 
 # Reading data and creating a 'RasterBrick'
 
-The hyperspectral image file for this analysis is shared with you in the MSCJ LIFE Slack group.  
-Please download it and set the correct path.
+The hyperspectral image file for this analysis is available under `data/`.
 
-The first step is to list all files within your working directory. This is the usual step when dealing with multiple files. 
-Here, the file is stored in a subdirectory of this .Rmd file called 'data'. We list all files with a specific ending using the full path. 
+The first step is to list all files within your working directory. 
+This is the usual step when dealing with multiple files. 
+Here, the file is stored in a subdirectory of this .Rmd file called 'data'. 
+We list all files with a specific ending using the full path. 
 
 ```{r 01-preprocessing-2 }
 # list files
