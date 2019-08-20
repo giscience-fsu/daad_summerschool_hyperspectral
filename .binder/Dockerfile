@@ -7,7 +7,7 @@ USER ${NB_USER}
 
 ENV SHELL /bin/bash
 ENV DEBIAN_FRONTEND=noninteractive
-
+RUN mkdir -p /var/lib/apt/lists/partial
 RUN apt-get -qq update && \
 apt-get install --yes --no-install-recommends libudunits2-dev libgdal-dev libgeos-dev ccache && \
 apt-get -qq purge && \
