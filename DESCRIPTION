@@ -10,6 +10,7 @@ Authors@R:
            comment = c(ORCID = "0000-0003-0748-6624"))
 Description: Hyperspectral tutorial at the DAAD summer school of the GIScience group, FSU Jena
 License: MIT
+URL: https://github.com/giscience-fsu/daad_summerschool_hyperspectral
 Depends: 
     caret,
     colorRamps,
