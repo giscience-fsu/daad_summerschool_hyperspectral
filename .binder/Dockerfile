@@ -5,8 +5,8 @@ COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
 
-RUN export DEBIAN_FRONTEND=noninteractive; apt-get -y update \
-  && apt-get install -y \
+RUN export DEBIAN_FRONTEND=noninteractive; sudo apt-get -y update \
+  && sudo apt-get install -y \
  libudunits2-dev \
  libgdal-dev \
  libgeos-dev \
