@@ -80,7 +80,7 @@ To plot the 100th spectrum, we can do the following:
 plot(speclib, FUN = 100, main = "100th spectrum of Speclib")
 ```
 
-# Combining multiple spectras
+# Combining multiple spectra
 
 In R the `par()` argument specifies the arrangement of multiple plots using the base `plot()` call.
 

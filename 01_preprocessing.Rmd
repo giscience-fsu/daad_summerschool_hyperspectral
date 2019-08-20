@@ -31,6 +31,7 @@ library("rasterVis")
 library("mapview")
 library("magrittr")
 library("stars")
+library("ggplot2")
 ```
 
 # Reading data and creating a 'RasterBrick'

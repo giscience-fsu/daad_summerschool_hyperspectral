@@ -103,8 +103,8 @@ It is also possible to use an object of class `HyperSpecRaster` in combination w
 During the function call our object gets automatically converted to class `speclib` and will be transformed back after success. 
 
 This approach is not supported by the _hsdar_  package.
-I wrote a wrapper function called `hsdar.vegIndex()` which is avaible on Github.
-You can install it via `remotes::install_github("pat-s/rasterFunctions")`. 
+I wrote a wrapper function called `hsdar.vegIndex()` which is available on Github.
+You can install the package via `remotes::install_github("pat-s/rasterFunctions")`. 
 
 *What does it do?*
 
@@ -128,9 +128,6 @@ ndvi_hyperspecraster <- rasterFunctions::hsdar.vegIndex(hyperspecs,
 Sys.time() - time
 ```
 
-Note the time difference of both approaches: The default `speclib` approach (option 1) takes longer and needs more memory (not shown here). 
-However, you can directly use the _speclib_ object and you do not need to install another package. 
-
 For convenience you should use the `speclib` approach and only use the `HyperSpecRaster` approach when you work with large raster files. 
 
 Here, we used the formula `NDVI2`. 
@@ -146,7 +143,7 @@ $$
 There are two possibilities on how to work with NRIs. 
 Either you assign two bands by wavelength from which the NRI should be calculated or you assign `recursive=TRUE` which means that NRIs will be calculated for all possible band combinations.
 
-For our example with 126 bands this would mean that there would be 122*121 (= 14762) possible combinations. 
+For our example with 126 bands this means that there are 122*121 (= 14762) possible combinations. 
 Since each band has 28350 spectra/pixels (162 columns, 175 rows), we end up with 418.502.700 total calculations for this image.
 
-If there is some time at the end, you can experiment with NRI calculation at the end of the session with the help of the `hsdar` vignette (`vignette("hsdar-intro")`). 
+If there is some time at the end, you can experiment with NRI calculation with the help of the `hsdar` vignette (`vignette("hsdar-intro")`). 
