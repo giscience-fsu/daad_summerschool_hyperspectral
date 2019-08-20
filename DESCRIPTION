@@ -1,19 +1,19 @@
 Type: Compendium
-Package: hyperspectralSchratz
-Title: What the Package Does (One Line, Title Case)
+Package: daadSummerschoolSchratz
+Title: Hyperspectral tutorial at the DAAD summer school of the GIScience group, FSU Jena
 Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Patrick",
+           family = "Schratz",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: hsdar tutorial for the DAAD summer school
-    2019
-License: What license it uses
+           email = "patrick.schratz@gmail.com",
+           comment = c(ORCID = "0000-0003-0748-6624"))
+Description: Hyperspectral tutorial at the DAAD summer school of the GIScience group, FSU Jena
+License: MIT
 Depends: 
     caret,
     colorRamps,
+    devtools,
     dplyr,
     ggplot2,
     ggthemes,
@@ -29,11 +29,8 @@ Depends:
     raster,
     rasterVis,
     RColorBrewer,
-    reportMD,
-    rgrass7,
     rmarkdown,
-    RQGIS3,
-    RSAGA,
+    roxygen2,
     sf,
     sp,
     spData,
@@ -41,6 +38,7 @@ Depends:
     stars,
     stats
 Remotes: 
+    karthik/holepunch,
     pat-s/rasterFunctions
 Encoding: UTF-8
 LazyData: true
