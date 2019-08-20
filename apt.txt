@@ -1,5 +1,1 @@
-libudunits2-dev
-libproj-dev
-libgeos-dev
-libgdal-dev
-ccache
+libudunits2-dev libproj-dev libgeos-dev libgdal-dev ccache
